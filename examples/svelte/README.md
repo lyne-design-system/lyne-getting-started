@@ -1,0 +1,5 @@
+# Use lyne-components in Svelte
+
+You have to add the dependency in the head of `/public/index.html`. Alternatively, you can install it via npm as well.
+
+After that you can use lyne-components.
