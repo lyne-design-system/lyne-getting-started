@@ -16,7 +16,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "lyne-test": "*",
+    "lyne-test": "latest",
     "sirv-cli": "^0.4.4"
   }
 }
