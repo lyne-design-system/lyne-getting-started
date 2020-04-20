@@ -1,7 +1,7 @@
-# lyne-components getting started
+# Getting started with Lyne Components
 
-The source code for lyne-components can be found here: [https://github.com/lyne-design-system/lyne-components](https://github.com/lyne-design-system/lyne-components)
+The source code for `lyne-components` can be found in the [Lyne Components repository](https://github.com/lyne-design-system/lyne-components).
 
 ## Examples
 
-See the example folder to see how you can integrate lyne-components in plain javascript, react, angular, vue or svelte.
+Check out the `examples` folder to see how you can integrate `lyne-components` in plain JavaScript, React, Angular, Vue or Svelte.
