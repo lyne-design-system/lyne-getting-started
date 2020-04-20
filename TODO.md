@@ -1,0 +1,1 @@
+- [ ] We have dependencies that should always be installed in latest version, like lyne-components. Find away so that after `npm install` the latest version of this package is installed.
