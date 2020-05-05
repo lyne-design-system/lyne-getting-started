@@ -14,6 +14,7 @@
 ## Deployments Page
 - List of all releases
 - Current work of developers is automatically published (-> previews)
+- ANALOGY WCMS: previewserver.sbb.ch
 
 # Excursus
 
