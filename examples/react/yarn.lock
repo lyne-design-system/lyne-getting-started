@@ -6443,10 +6443,10 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-lyne-test@^6.21.0:
-  version "6.21.0"
-  resolved "https://registry.yarnpkg.com/lyne-test/-/lyne-test-6.21.0.tgz#2c0457caf4b8e604c5bc8febe25b0a6894ad394b"
-  integrity sha512-4j26lHAtiahHniXyd0joyEwi5iSIsyZuyAPjC1TJW8Bwy8pDTqStI6hZlLk3zmRI++r1KHNZj7+mXsXr8PHvmw==
+lyne-test@^6.21.1:
+  version "6.21.1"
+  resolved "https://registry.yarnpkg.com/lyne-test/-/lyne-test-6.21.1.tgz#bb2c3d5ef657def4afcbff50a49a7600b1c03dfb"
+  integrity sha512-vZO9L96CNAk3Ff92R4iU2XE7fZ8utx14hgOlSKEqG4jXKqOrylI1/udP0CoP4x1AY/kPufAjMwXxxMAZlTM5SA==
 
 make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
