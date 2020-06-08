@@ -1302,10 +1302,10 @@
     "@babel/runtime" "^7.10.2"
     "@testing-library/dom" "^7.9.0"
 
-"@testing-library/user-event@^11.1.0":
-  version "11.1.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-11.1.0.tgz#7b1eaed90a959bf32d29854106cff321b2a65a3f"
-  integrity sha512-ZAHoI6K8y3J1QxG2FMgm+xQRCvzwHZHW5pEJyjY9tnCS24JMwFNEaC3y6OecRIdjZtNQfGi5YHU5Ra/cUoIIjQ==
+"@testing-library/user-event@^11.0.0":
+  version "11.2.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-11.2.1.tgz#2de8327e4cf89c145bcf9a0f17773a632bc58b26"
+  integrity sha512-dwXa4y+9mAp1+wR/1ufFjm5kUHsvJ5Y5dCdaWyU1CXIA7SNSHcEYVWHGjwZNGrxf00Jm16bN57z5gUMsXCzjSA==
   dependencies:
     "@babel/runtime" "^7.10.2"
 
@@ -10351,9 +10351,9 @@ websocket-driver@>=0.5.1:
     websocket-extensions ">=0.1.1"
 
 websocket-extensions@>=0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
-  integrity sha512-nqHUnMXmBzT0w570r2JpJxfiSD1IzoI+HGVdd3aZ0yNi3ngvQ4jv1dtHt5VGxfI2yj5yqImPhOK4vmIh2xMbGg==
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
+  integrity sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==
 
 whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3, whatwg-encoding@^1.0.5:
   version "1.0.5"
