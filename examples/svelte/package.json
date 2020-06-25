@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "lyne-test": "latest",
-    "sirv-cli": "^0.4.6"
+    "sirv-cli": "^1.0.1"
   }
 }
