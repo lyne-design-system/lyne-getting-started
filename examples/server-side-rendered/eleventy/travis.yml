@@ -1,0 +1,10 @@
+os: linux
+language: node_js
+jobs:
+  include:
+    - stage: build, test and deploy 11ty app
+      if: ((branch = master AND type != pull_request) AND fork = false)
+      script:
+
+        # install dependencies
+        - npm install || travis_terminate 1
