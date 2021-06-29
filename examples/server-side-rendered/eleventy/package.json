@@ -1,0 +1,21 @@
+{
+  "name": "eleventy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copy:components": "ncp ./node_modules/lyne-test/ ./dist/js/lyne-test/",
+    "dev": "npx @11ty/eleventy --serve",
+    "start": "npm run copy:components & npm run dev",
+    "build": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "~0.12.1",
+    "ncp": "~2.0.0"
+  },
+  "dependencies": {
+    "lyne-test": "~9.20.0"
+  }
+}
