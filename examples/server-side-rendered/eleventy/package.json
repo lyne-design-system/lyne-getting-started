@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "copy:components": "ncp ./node_modules/lyne-test/ ./dist/js/lyne-test/",
+    "clear:components": "rm -rf dist && mkdir dist && cd dist && mkdir js",
+    "copy:components": "npm run clear:components && ncp ./node_modules/lyne-test/ ./dist/js/lyne-test/",
     "dev": "eleventy --serve",
     "start": "npm run copy:components & npm run dev",
     "build": "npm run copy:components & eleventy"
