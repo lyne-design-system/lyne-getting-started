@@ -13,9 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "~0.12.1",
+    "lyne-test": "~9.20.1",
     "ncp": "~2.0.0"
   },
-  "dependencies": {
-    "lyne-test": "~9.20.0"
-  }
+  "dependencies": {}
 }
