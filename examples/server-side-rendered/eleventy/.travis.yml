@@ -5,5 +5,5 @@ jobs:
       - cd examples/server-side-rendered/eleventy
       - npm install
       - npm run build || travis_terminate 1
-      - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_TOKEN --dir ./dist/
+      - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_TOKEN --dir ./dist/ || travis_terminate 1
       - cd ../../../
