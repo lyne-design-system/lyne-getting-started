@@ -1,1 +1,3 @@
 import: examples/server-side-rendered/eleventy/.travis.yml
+
+import: examples/client-side-rendered/.travis.yml
