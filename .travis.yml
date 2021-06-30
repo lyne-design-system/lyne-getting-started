@@ -4,6 +4,7 @@ group: edge
 language: node_js
 arch: arm64-graviton2
 virt: lxd
+install: skip
 
 import:
   - examples/server-side-rendered/eleventy/.travis.yml
