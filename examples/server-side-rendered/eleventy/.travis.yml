@@ -2,5 +2,8 @@ jobs:
   include:
     - stage: 11ty app example
       script:
-      - npm run build
+      - cd examples/server-side-rendered/eleventy
+      - npm install
+      - npm run build || travis_terminate 1
       - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_TOKEN --dir ./dist/
+      - cd ../../../
