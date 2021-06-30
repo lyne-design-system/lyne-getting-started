@@ -1,9 +1,6 @@
-os: linux
-language: node_js
 jobs:
   include:
-    - stage: build, test and deploy 11ty app
-      if: ((branch = master AND type != pull_request) AND fork = false)
+    - stage: 11ty app example
       script:
 
         # install dependencies

@@ -7,4 +7,3 @@ virt: lxd
 
 import:
   - examples/server-side-rendered/eleventy/.travis.yml
-  - examples/client-side-rendered/.travis.yml
