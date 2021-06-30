@@ -3,5 +3,5 @@ jobs:
     - stage: 11ty app example
       script:
 
-        # install dependencies
-        - npm install || travis_terminate 1
+        - npm run build
+        - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_TOKEN --dir ./dist/
