@@ -7,7 +7,7 @@
     "copy:components": "ncp ./node_modules/lyne-test/ ./dist/js/lyne-test/",
     "dev": "npx @11ty/eleventy --serve",
     "start": "npm run copy:components & npm run dev",
-    "build": "npx @11ty/eleventy"
+    "build": "npm run copy:components & npx @11ty/eleventy"
   },
   "author": "",
   "license": "ISC",
