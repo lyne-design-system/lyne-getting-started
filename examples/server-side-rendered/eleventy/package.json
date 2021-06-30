@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "copy:components": "ncp ./node_modules/lyne-test/ ./dist/js/lyne-test/",
-    "dev": "npx @11ty/eleventy --serve",
+    "dev": "eleventy --serve",
     "start": "npm run copy:components & npm run dev",
-    "build": "npm run copy:components & npx @11ty/eleventy"
+    "build": "npm run copy:components & eleventy"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +16,7 @@
     "ncp": "~2.0.0",
     "netlify-cli": "~4.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lyne-test": "~9.20.1"
+  }
 }
