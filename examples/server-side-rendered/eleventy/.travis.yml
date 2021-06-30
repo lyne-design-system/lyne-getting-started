@@ -2,6 +2,5 @@ jobs:
   include:
     - stage: 11ty app example
       script:
-
-        - npm run build
-        - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_TOKEN --dir ./dist/
+      - npm run build
+      - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_TOKEN --dir ./dist/
