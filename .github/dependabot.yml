@@ -1,22 +1,31 @@
 version: 2
 updates:
 - package-ecosystem: npm
-  directory: "/examples/angular"
+  directory: "/examples/client-side-rendered/angular"
   schedule:
-    interval: daily
+    interval: "weekly"
   open-pull-requests-limit: 10
+
 - package-ecosystem: npm
-  directory: "/examples/react"
+  directory: "/examples/client-side-rendered/react"
   schedule:
-    interval: daily
+    interval: "weekly"
   open-pull-requests-limit: 10
+
 - package-ecosystem: npm
-  directory: "/examples/svelte"
+  directory: "/examples/client-side-rendered/svelte"
   schedule:
-    interval: daily
+    interval: "weekly"
   open-pull-requests-limit: 10
+
 - package-ecosystem: npm
-  directory: "/examples/vue"
+  directory: "/examples/client-side-rendered/vue"
   schedule:
-    interval: daily
+    interval: "weekly"
+  open-pull-requests-limit: 10
+
+- package-ecosystem: npm
+  directory: "/examples/server-side-rendered/eleventy"
+  schedule:
+    interval: "weekly"
   open-pull-requests-limit: 10
