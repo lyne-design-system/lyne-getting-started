@@ -4,28 +4,28 @@ updates:
   directory: "/examples/client-side-rendered/angular"
   schedule:
     interval: "weekly"
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 20
 
 - package-ecosystem: npm
   directory: "/examples/client-side-rendered/react"
   schedule:
     interval: "weekly"
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 20
 
 - package-ecosystem: npm
   directory: "/examples/client-side-rendered/svelte"
   schedule:
     interval: "weekly"
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 20
 
 - package-ecosystem: npm
   directory: "/examples/client-side-rendered/vue"
   schedule:
     interval: "weekly"
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 20
 
 - package-ecosystem: npm
   directory: "/examples/server-side-rendered/eleventy"
   schedule:
     interval: "weekly"
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 20
