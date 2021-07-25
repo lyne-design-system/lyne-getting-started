@@ -1,7 +1,7 @@
 notifications:
   slack:
     template:
-      - "Project: lyne-getting-started/examples/server-side-rendered/elevent"
+      - "Project: lyne-getting-started/examples/server-side-rendered/eleventy"
       - "Build: <%{build_url}|%{build_number}>"
       - "Commit: <%{compare_url}|%{commit}>"
       - "Author: %{author}"
