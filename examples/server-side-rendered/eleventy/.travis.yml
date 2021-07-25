@@ -1,9 +1,27 @@
+notifications:
+  slack:
+    template:
+      - "Project: lyne-getting-started/examples/server-side-rendered/eleventy"
+      - "Build: <%{build_url}|%{build_number}>"
+      - "Commit: <%{compare_url}|%{commit}>"
+      - "Author: %{author}"
+      - "Result: %{result} in %{duration}"
+    secure: h2C+mXKUbZzIuZAViUUlxwT/XfHzah8XkZV5Lz6PyGcht0w++ec91zi+AEsdGpeF9b/oxvv13QHOQ0irZK8YI4dPFkPJ6q4swmRDmW8kgt4Y7PTlK+rHnRKB+S9+roYMBayXZFfDUFwoP7V4TzlhkRekLqbkqUMHgkFDhaFYTdvRXv3sa/yM2kUxFsc45PkFBbmkqDEF17TyzTFzO48ZuxD9Qk3exqKr/NYhohXjA/hc61MyLAJOrFVbm8d5YR6l18OPQg1EN94+Ckkt458E3yR4Q2jJieYyVwAgd9Ydm6//RBj3//oFCXKdYtio8lUNNDZvZkE5XPpPmgCKoJWgv71sQzPvH1kqw1wJ4VLmtIgDXHhx30u7TzYkUS2uFYUeJ4zbQBWq7DErWs4+7fyTuUBrnBml16J5TnQQl9P6zGEQUVkgHyILZX2LrgaMxicmSSA9z5ssIDfnTtgAyXGDtJFK3+HKyK2aZyz1QQNkHh5J/mlVqa2b6gex4QRT3zVnP/28hOjVhLj4OaheJTl+pc4D98zjKD4RzJVmUUnCYLBi55hhdXsKaUYSAFFcyMdF+b1ux8B41WQH5ic6jrvKDr6ZQudGV5IE8TwEcrc8fErEw8g8qia2Vmyhzch6Wl7bBXIbUKpskK/nSVvmD4WTUsmdtNy7UVj1eE27yVxtl2E=
 jobs:
   include:
-    - stage: 11ty app example
-      script:
-      - cd examples/server-side-rendered/eleventy
-      - npm install
-      - npm run build || travis_terminate 1
-      - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_TOKEN --dir ./dist/ || travis_terminate 1
-      - cd ../../../
+  - stage: build & deploy production
+    if: ((branch = master AND type != pull_request) AND fork = false)
+    script:
+    - cd examples/server-side-rendered/eleventy
+    - npm install
+    - npm run build || travis_terminate 1
+    - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_TOKEN --dir ./dist/ || travis_terminate 1
+    - cd ../../../
+
+  - stage: build branch
+    if: ((branch != master OR type = pull_request) AND fork = false)
+    script:
+    - cd examples/server-side-rendered/eleventy
+    - npm install
+    - npm run build || travis_terminate 1
+    - cd ../../../
