@@ -16,6 +16,6 @@
     "netlify-cli": "~5.2.2"
   },
   "dependencies": {
-    "lyne-test": "~9.23.2"
+    "lyne-test": "~9.26.12"
   }
 }
