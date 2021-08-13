@@ -2,8 +2,27 @@
 layout: layout.njk
 ---
 
-<h1>Server- & Client-Side Hydration example</h1>
-<p>This button is a Webcomponenten which uses ShadowDom. The button calls alert() via Javascript inside the component.</p>
-<p>If the alert shows, that is proof that client-side hydration is working</p>
-<p>If you disable javascript in the browser, and the button still has a red border, that is proof that server-side hydartion is working.</p>
-<lyne-alert></lyne-alert>
+<h1>Hydration</h1>
+
+<p>Our components need Javascript to be interpreted, displayed and behave correctly (interaction). Without hydration, clients would first need to download our StencilJS loader and execute it, so that the browser understands our custom-elements (on this page, lyne-button is an unknown html element for the browser).</p>
+
+<p>In the server-side hydration, we make part of this "interpretation" on the server, rendering the contents of the component to plain html, and attaching all the css-classes needed for the component to have the correct appearance.</p>
+
+<p>On the client-side, we kick in another hydration to attach all neccessary event handlers to the elements to make it interactive.</p>
+
+<h2>Server-Side</h2>
+
+<p>To test the server-side hydration, you have to disable JavaScript on this page. Then you'll see what you get directly from the server. You should not see any visual difference by disabling JavaScript.</p>
+
+
+<h2>Client-Side</h2>
+
+<p>The button dispatches an event on click with JavaScript. In this file, we're listening to that event and showing an alert as soon as it is received.</p>
+<p>So if the alert shows up if you click on the button, that means that client-side hydration is working (make sure you enable JavaScript again).</p>
+<lyne-button event-id="eleventy-event"></lyne-button>
+
+<script>
+window.addEventListener('lyne-button_click', function(data) {
+    alert("Event received with event-id: " + data.detail);
+});
+</script>
