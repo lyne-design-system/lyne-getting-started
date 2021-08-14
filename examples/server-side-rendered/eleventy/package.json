@@ -13,7 +13,7 @@
   "devDependencies": {
     "@11ty/eleventy": "~0.12.1",
     "ncp": "~2.0.0",
-    "netlify-cli": "~6.0.8"
+    "netlify-cli": "~6.3.5"
   },
   "dependencies": {
     "lyne-test": "~9.27.0"
