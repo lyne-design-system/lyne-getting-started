@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { defineCustomElements } from 'lyne-test/loader';
+import { defineCustomElements } from 'lyne-test/dist/esm/loader';
 
 defineCustomElements();
 
