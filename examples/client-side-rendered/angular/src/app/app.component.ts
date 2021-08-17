@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  buttonLabel = 'lyne-cta-button used in Angular';
+  buttonLabel = 'lyne-button used in Angular';
 }
