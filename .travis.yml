@@ -4,10 +4,6 @@ group: edge
 language: node_js
 arch: arm64-graviton2
 virt: lxd
-install: skip
-
-script:
-- npm install
 
 import:
 - examples/client-side-rendered/angular/.travis.yml
