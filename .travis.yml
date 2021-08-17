@@ -16,25 +16,30 @@ notifications:
     secure: h2C+mXKUbZzIuZAViUUlxwT/XfHzah8XkZV5Lz6PyGcht0w++ec91zi+AEsdGpeF9b/oxvv13QHOQ0irZK8YI4dPFkPJ6q4swmRDmW8kgt4Y7PTlK+rHnRKB+S9+roYMBayXZFfDUFwoP7V4TzlhkRekLqbkqUMHgkFDhaFYTdvRXv3sa/yM2kUxFsc45PkFBbmkqDEF17TyzTFzO48ZuxD9Qk3exqKr/NYhohXjA/hc61MyLAJOrFVbm8d5YR6l18OPQg1EN94+Ckkt458E3yR4Q2jJieYyVwAgd9Ydm6//RBj3//oFCXKdYtio8lUNNDZvZkE5XPpPmgCKoJWgv71sQzPvH1kqw1wJ4VLmtIgDXHhx30u7TzYkUS2uFYUeJ4zbQBWq7DErWs4+7fyTuUBrnBml16J5TnQQl9P6zGEQUVkgHyILZX2LrgaMxicmSSA9z5ssIDfnTtgAyXGDtJFK3+HKyK2aZyz1QQNkHh5J/mlVqa2b6gex4QRT3zVnP/28hOjVhLj4OaheJTl+pc4D98zjKD4RzJVmUUnCYLBi55hhdXsKaUYSAFFcyMdF+b1ux8B41WQH5ic6jrvKDr6ZQudGV5IE8TwEcrc8fErEw8g8qia2Vmyhzch6Wl7bBXIbUKpskK/nSVvmD4WTUsmdtNy7UVj1eE27yVxtl2E=
 
 script:
+
+  # build 11ty
   - cd examples/server-side-rendered/eleventy
   - npm install || travis_terminate 1
   - npm run build || travis_terminate 1
   - cd ../../../
 
+  # build vue
   - cd examples/client-side-rendered/vue
   - npm install || travis_terminate 1
   - npm run build || travis_terminate 1
   - cd ../../../
 
+  # build react
   - cd examples/client-side-rendered/react
   - npm install || travis_terminate 1
   - npm run build || travis_terminate 1
   - cd ../../../
 
+  # build javascript
   - cd examples/client-side-rendered/javascript
-  - npm install || travis_terminate 1
   - cd ../../../
 
+  # build angular
   - cd examples/client-side-rendered/angular
   - npm install || travis_terminate 1
   - npm run build || travis_terminate 1
@@ -42,4 +47,17 @@ script:
 
 
 after_success:
-  - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_TOKEN --dir ./examples/server-side-rendered/eleventy/dist/ || travis_terminate 1
+  # deploy 11ty
+  - netlify deploy --prod --site $NETLIFY_ID_ELEVENTY --auth $NETLIFY_TOKEN --dir ./examples/server-side-rendered/eleventy/dist/ || travis_terminate 1
+
+  # deploy vue
+  - netlify deploy --prod --site $NETLIFY_ID_VUE --auth $NETLIFY_TOKEN --dir ./examples/client-side-rendered/vue/dist/ || travis_terminate 1
+
+  # deploy react
+  - netlify deploy --prod --site $NETLIFY_ID_REACT --auth $NETLIFY_TOKEN --dir ./examples/client-side-rendered/react/build/ || travis_terminate 1
+
+  # deploy javascript
+  - netlify deploy --prod --site $NETLIFY_ID_JAVASCRIPT --auth $NETLIFY_TOKEN --dir ./examples/client-side-rendered/javascript/dist/ || travis_terminate 1
+
+  # deploy angular
+  - netlify deploy --prod --site $NETLIFY_ID_ANGULAR --auth $NETLIFY_TOKEN --dir ./examples/client-side-rendered/angular/dist/ || travis_terminate 1
