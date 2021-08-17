@@ -1,4 +1,0 @@
-script:
-  - cd examples/client-side-rendered/javascript
-  - npm install || travis_terminate 1
-  - cd ../../../
