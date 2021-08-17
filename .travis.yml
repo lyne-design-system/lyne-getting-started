@@ -60,4 +60,4 @@ after_success:
   - netlify deploy --prod --site $NETLIFY_ID_JAVASCRIPT --auth $NETLIFY_TOKEN --dir ./examples/client-side-rendered/javascript/dist/ || travis_terminate 1
 
   # deploy angular
-  - netlify deploy --prod --site $NETLIFY_ID_ANGULAR --auth $NETLIFY_TOKEN --dir ./examples/client-side-rendered/angular/dist/ || travis_terminate 1
+  - netlify deploy --prod --site $NETLIFY_ID_ANGULAR --auth $NETLIFY_TOKEN --dir ./examples/client-side-rendered/angular/dist/angular/ || travis_terminate 1
