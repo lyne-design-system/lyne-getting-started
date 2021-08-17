@@ -1,17 +1,4 @@
-jobs:
-  include:
-  - stage: build & deploy production
-    if: ((branch = master AND type != pull_request) AND fork = false)
-    script:
-    - cd examples/client-side-rendered/javascript
-    - npm install || travis_terminate 1
-    # - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_TOKEN --dir ./dist/ || travis_terminate 1
-    - cd ../../../
-
-  - stage: build branch
-    if: ((branch != master OR type = pull_request) AND fork = false)
-    script:
-    - cd examples/client-side-rendered/javascript
-    - npm install || travis_terminate 1
-    - npm run build || travis_terminate 1
-    - cd ../../../
+script:
+  - cd examples/client-side-rendered/javascript
+  - npm install || travis_terminate 1
+  - cd ../../../
