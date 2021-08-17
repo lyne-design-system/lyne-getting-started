@@ -6,4 +6,8 @@ arch: arm64-graviton2
 virt: lxd
 install: skip
 import:
+- examples/client-side-rendered/angular/.travis.yml
+- examples/client-side-rendered/javascript/.travis.yml
+- examples/client-side-rendered/react/.travis.yml
+- examples/client-side-rendered/vue/.travis.yml
 - examples/server-side-rendered/eleventy/.travis.yml
