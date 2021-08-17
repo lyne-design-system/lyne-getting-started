@@ -8,7 +8,7 @@ virt: lxd
 notifications:
   slack:
     template:
-      - "Project: lyne-getting-started/examples/client-side-rendered/react"
+      - "Project: lyne-getting-started"
       - "Build: <%{build_url}|%{build_number}>"
       - "Commit: <%{compare_url}|%{commit}>"
       - "Author: %{author}"
