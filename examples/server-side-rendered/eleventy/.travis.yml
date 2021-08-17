@@ -1,5 +1,0 @@
-script:
-- cd examples/server-side-rendered/eleventy
-- npm install || travis_terminate 1
-- npm run build || travis_terminate 1
-- cd ../../../
