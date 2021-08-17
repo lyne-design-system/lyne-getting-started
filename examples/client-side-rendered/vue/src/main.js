@@ -1,11 +1,7 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
-import { defineCustomElements } from 'lyne-test/loader';
-
-Vue.config.productionTip = false
+import { defineCustomElements } from 'lyne-test/dist/esm/loader';
 
 defineCustomElements();
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+createApp(App).mount('#app')
