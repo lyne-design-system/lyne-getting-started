@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "lyne-test": "~9.27.3",
+    "lyne-test": "~9.28.1",
     "vue": "^3.0.0"
   },
   "devDependencies": {
