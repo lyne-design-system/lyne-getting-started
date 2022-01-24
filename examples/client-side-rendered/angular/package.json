@@ -18,7 +18,7 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
-    "lyne-test": "~9.71.0",
+    "lyne-test": "~9.72.5",
     "rxjs": "~7.5.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
