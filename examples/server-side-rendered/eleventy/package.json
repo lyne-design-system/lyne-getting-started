@@ -15,6 +15,6 @@
     "ncp": "~2.0.0"
   },
   "dependencies": {
-    "lyne-test": "~10.0.0"
+    "lyne-test": "~10.1.0"
   }
 }
