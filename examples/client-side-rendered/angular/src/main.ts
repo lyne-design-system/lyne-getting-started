@@ -4,7 +4,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
-import { defineCustomElements } from 'lyne-test/dist/esm/loader';
+import { defineCustomElements } from '@sbb-esta/lyne-components/dist/esm/loader';
 
 if (environment.production) {
   enableProdMode();

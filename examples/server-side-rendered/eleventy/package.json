@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "copy:components": "mkdir -p dist/js && ncp ./node_modules/lyne-test/ ./dist/js/lyne-test/",
+    "copy:components": "mkdir -p dist/js && ncp ./node_modules/@sbb-esta/lyne-components/ ./dist/js/lyne-components/",
     "start": "npm run copy:components & npx @11ty/eleventy --serve",
     "build": "npm run copy:components & npx @11ty/eleventy"
   },
@@ -15,6 +15,6 @@
     "ncp": "~2.0.0"
   },
   "dependencies": {
-    "lyne-test": "~10.8.1"
+    "@sbb-esta/lyne-components": "0.1.2"
   }
 }

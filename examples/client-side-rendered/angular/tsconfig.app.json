@@ -4,10 +4,10 @@
   "compilerOptions": {
     "outDir": "./out-tsc/app",
     "types": [
-      "lyne-test"
+      "@sbb-esta/lyne-components"
     ],
     "typeRoots": [
-      "./node_modules/lyne-test/"
+      "./node_modules/@sbb-esta/lyne-components/"
     ]
   },
   "files": [
