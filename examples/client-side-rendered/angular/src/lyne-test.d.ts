@@ -1,1 +1,1 @@
-declare module 'lyne-test/dist/esm/loader';
+declare module '@sbb-esta/lyne-components/dist/esm/loader';

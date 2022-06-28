@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import { defineCustomElements } from 'lyne-test/dist/esm/loader';
+import { defineCustomElements } from '@sbb-esta/lyne-components/dist/esm/loader';
 
 defineCustomElements();
 
