@@ -1,0 +1,64 @@
+name: Continuous Integration
+on: [push, pull_request]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  eleventy:
+    runs-on: ubuntu-latest
+    env:
+      DIR: ./examples/server-side-rendered/eleventy
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+        working-directory: ${{ env.DIR }}
+      - run: npm run build
+        working-directory: ${{ env.DIR }}
+
+  vue:
+    runs-on: ubuntu-latest
+    env:
+      DIR: ./examples/client-side-rendered/vue
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+        working-directory: ${{ env.DIR }}
+      - run: npm run build
+        working-directory: ${{ env.DIR }}
+
+  react:
+    runs-on: ubuntu-latest
+    env:
+      DIR: ./examples/client-side-rendered/react
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+        working-directory: ${{ env.DIR }}
+      - run: npm run build
+        working-directory: ${{ env.DIR }}
+
+  angular:
+    runs-on: ubuntu-latest
+    env:
+      DIR: ./examples/client-side-rendered/angular
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+        working-directory: ${{ env.DIR }}
+      - run: npm run build
+        working-directory: ${{ env.DIR }}
+
