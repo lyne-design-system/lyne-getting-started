@@ -15,6 +15,6 @@
     "ncp": "~2.0.0"
   },
   "dependencies": {
-    "@sbb-esta/lyne-components": "0.1.2"
+    "@sbb-esta/lyne-components": "0.1.4"
   }
 }
