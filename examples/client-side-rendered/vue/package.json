@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.22.8",
-    "@sbb-esta/lyne-components": "0.1.2",
+    "@sbb-esta/lyne-components": "0.1.4",
     "vue": "^3.0.0"
   },
   "devDependencies": {
