@@ -7,7 +7,7 @@
 We encourage you to use server and client side hydration whenever possible. This repo shows how to do it.
 
 1. Install `@sbb-esta/lyne-components` as a dependency.
-2. Load the `lyne-components` with script tag. See `layout.njk` for an example.
+2. Load the `lyne-components` with script tag and add the import of the stylesheet. See `layout.njk` for an example.
 3. Add a transform to `.eleventy.js`. Use our `hydrate` script to render the page contents to a string.
 4. Use the components as usual. See `index.njk` for an example.
 

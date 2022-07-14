@@ -1,4 +1,5 @@
 import React from 'react';
+import '@sbb-esta/lyne-components/dist/lyne-components/lyne-components.css';
 import './css/fonts.css';
 
 function App() {
