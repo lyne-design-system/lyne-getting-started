@@ -4,6 +4,6 @@
 
 1. Install lyne-components as npm-package: `npm install @sbb-esta/lyne-components --save`.
 2. In `/src/main.js` import `defineCustomElements` and call the function.
-2. In `/src/main.js` add `import '@sbb-esta/lyne-components/dist/lyne-components/lyne-components.css';`.
+3. In `/src/main.js` add `import '@sbb-esta/lyne-components/dist/lyne-components/lyne-components.css';`.
 
 After that you can use lyne-components.
