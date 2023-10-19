@@ -11,7 +11,7 @@ jobs:
     env:
       DIR: ./examples/server-side-rendered/eleventy
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -25,7 +25,7 @@ jobs:
     env:
       DIR: ./examples/client-side-rendered/vue
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -39,7 +39,7 @@ jobs:
     env:
       DIR: ./examples/client-side-rendered/react
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -53,7 +53,7 @@ jobs:
     env:
       DIR: ./examples/client-side-rendered/angular
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 16
