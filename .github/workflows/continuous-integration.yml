@@ -12,7 +12,7 @@ jobs:
       DIR: ./examples/server-side-rendered/eleventy
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 16
       - run: npm ci
@@ -26,7 +26,7 @@ jobs:
       DIR: ./examples/client-side-rendered/vue
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 16
       - run: npm ci
@@ -40,7 +40,7 @@ jobs:
       DIR: ./examples/client-side-rendered/react
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 16
       - run: npm ci
@@ -54,7 +54,7 @@ jobs:
       DIR: ./examples/client-side-rendered/angular
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 16
       - run: npm ci
